@@ -1,0 +1,118 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/*共通*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+	padding: 0 5%;
+}
+
+.btn {
+	width: 200px;
+	display: block;
+	border-radius: 15px;
+	font-size: 20px;
+	padding: 10px 30px;
+	margin: 0 auto;
+}
+
+/*トップ画面*/
+.box {
+	padding-top: 50px;
+	width: 500px;
+	margin: 0 auto;
+}
+
+.title {
+	font-size: 45px;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+.about-message {
+	font-size: 25px;
+	text-align: center;
+	padding: 30px 0;
+}
+
+/*準備画面 再生画面 結果画面*/
+#introduction {
+	font-size: 25px;
+	text-align: center;
+}
+
+#illust {
+	display: block;
+	margin: 0 auto;
+	padding: 30px 0;
+}
+
+.start-message > p {
+	font-size: 25px;
+	text-align: center;
+	padding-bottom: 15px;
+}
+
+.end-message {
+	display: none;
+}
+
+.end-message > p {
+	font-size: 25px;
+	text-align: center;
+	padding-bottom: 15px;
+}
+
+.result-message {
+	font-weight: bold;
+}
+
+#again {
+	list-style: none;
+	display: none;
+}
+
+.retry {
+	padding: 8px 0;
+}
+#illust{
+	width: 100%;
+	padding-bottom: 2em;
+}
+
+@media screen and (max-width: 500px) {
+	.box {
+		width: 100%;
+		padding-top: 15px;
+	}
+
+	@media screen and (max-width: 320px) {
+		.title {
+			font-size: 40px;
+		}
+
+		.box {
+			padding-top: 0;
+		}
+	}
+}

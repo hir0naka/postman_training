@@ -1,0 +1,27 @@
+<div class="box">
+	<img id="illust" src="/assets/ready.png">
+	<!-- 初めは<div class="start-message">のみ表示
+	ボタンを押したら<div class="start-message">を非表示にして
+	<div class="end-message">を表示する -->
+	<div class="message-group">
+		<div class="start-message">
+			<p>10.0秒を目指してみましょう！</p>
+		</div>
+		<div class="end-message">
+			<p>ただいまのタイムは</p>
+			<p class="result-time"></p>
+			<p class="result-message"></p>
+		</div>
+	</div>
+
+	<!-- 初めは<div id="ready">のみ表示
+	ボタンを押したら<div id="ready">を非表示にして
+	<ul id="again">を表示する -->
+	<div id="ready">
+		<input type="button" value="Aでスタート" id="start" class="btn btn-primary"></input>
+	</div>
+	<ul id="again">
+		<li class="retry"><%= link_to 'もう一度！', postman_path, class: "btn btn-primary" %></li>
+		<li><%= link_to 'やめる', top_path, class: "btn btn-primary" %></li>
+	</ul>
+</div>
