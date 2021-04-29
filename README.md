@@ -1,4 +1,4 @@
 # README
-ajaxの勉強がてらゼルダの伝説ムジュラの仮面のあのミニゲームを再現
+ゼルダの伝説ムジュラの仮面のポストマンのミニゲームを再現
 
 https://stark-beyond-66368.herokuapp.com
